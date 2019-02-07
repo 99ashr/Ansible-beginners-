@@ -1,0 +1,20 @@
+#!!!Copy module!!!
+
+ansible localhost -m copy -a "src=./src.txt dest=../"
+
+#!!!Result!!!
+
+localhost | SUCCESS => {
+    "changed": true, 
+    "checksum": "afd9aca6a0f7724f8378b7f2aca2a3d6e29425d9", 
+    "dest": "../src.txt", 
+    "gid": 1000, 
+    "group": "ashr", 
+    "md5sum": "f25f151524edf0cbfce44c312819548a", 
+    "mode": "0644", 
+    "owner": "ashr", 
+    "size": 25, 
+    "src": "/home/ashr/.ansible/tmp/ansible-tmp-1549551849.6-156039053356284/source", 
+    "state": "file", 
+    "uid": 1000
+}

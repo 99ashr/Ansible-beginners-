@@ -1,0 +1,14 @@
+#!!!Use of module!!!
+
+
+There are various modules in ansible for various purposes. The list has been provied in parent directory.
+
+#!!!Shell!!!
+
+ansible localhost -m shell -a "date"
+
+#!!!Result!!!
+
+localhost | SUCCESS | rc=0 >>
+Thu Feb  7 20:25:43 IST 2019
+

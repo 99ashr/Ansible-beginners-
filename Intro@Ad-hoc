@@ -1,0 +1,15 @@
+#!!!@Ansible!!!
+
+Ansible is a medium of operating multiple machines simultaneously. The best example is Opearting m/c at some org.
+Like if I want to install mariadb over our machines then it would be more handy to do it using Ansible rather than installing mariadb on every machine individually.
+
+
+#!!!Ad-hoc Commands!!!
+
+Ad-hoc commands are inline commands that are used only for few operations or say operations that are not frequent. 
+These ad-hoc commands requires 'hostname' (set the host name in /etc/hosts) 'modules' or by default it is command 'arguments' and 'command that is to be performed'.
+
+#!!!For Example!!!
+	ansible localhost -m (module) ping
+	(to see the actual command prefer Ad-hoc folder within the same repo).
+	If Everything goes well then it would Result as: "ping":"pong"

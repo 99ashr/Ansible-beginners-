@@ -1,0 +1,18 @@
+---
+ - hosts: all             # this is our target section 
+   tasks:
+    - name: install the latest version of Apache
+      apt:
+       name: httpd
+       state: present
+
+    - name:  starting service of httpd
+      service: 
+       name: httpd 
+       state: started 
+       enabled: yes
+
+    - name: copy abc.html to /var/www/html with name of index.html
+      copy: 
+       src: /root/Desktop/abc.html  
+       dest: /var/www/html/index.html

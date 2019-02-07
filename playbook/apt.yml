@@ -1,0 +1,12 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: Installing Openssh-server
+      apt:
+       name: openssh-server
+       state: present
+       register: Openssh-server
+    
+    - name: Display
+      debug:
+       var: Openssh-server 

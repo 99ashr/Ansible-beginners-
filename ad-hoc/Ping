@@ -1,0 +1,11 @@
+#!!!Ping command!!!
+
+ansible localhost -m ping
+
+
+#!!!Result!!!
+
+localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}

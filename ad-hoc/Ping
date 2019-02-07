@@ -2,6 +2,8 @@
 
 ansible localhost -m ping
 
+#!!!Module is not mentioned here because default 'command' moduled has been used!!!
+
 
 #!!!Result!!!
 
